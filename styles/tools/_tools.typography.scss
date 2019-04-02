@@ -1,0 +1,14 @@
+@mixin centerAndjustifyContent()
+{
+    padding-left:10%;
+    padding-right:10%;
+    text-align: justify;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+@mixin marginCenter()
+{
+    margin-left:auto;
+    margin-right:auto;
+}

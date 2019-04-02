@@ -1,0 +1,65 @@
+.root{
+    width:100vw;
+    height: 100vh;
+    background:$backgroundColor;
+    padding-top:3rem;
+}
+.c-dashboard{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: auto;
+
+    &__imagesRow{
+        display:flex;
+        justify-content: space-between;
+        width:70%;   
+        margin-top:2rem;    
+    }
+    &__image{
+
+        flex-basis: 30%;
+        padding-bottom:30%;
+        position: relative;
+        background-size: contain;
+        resize:both;
+        display:flex;
+        justify-content: center;
+        text-align:center;
+
+        
+
+        &--bijou{
+            background-image: url("/src/img/bijou.jpg");
+        }
+        &--negron{
+            background-image: url("/src/img/negroni.jpg");
+        }
+        &--mojito{
+            background-image: url("/src/img/mojito.jpg");
+        }
+        &--texas{
+            background-image: url("/src/img/rattlesnake.jpg");
+        }
+        &--eggnogg{
+            background-image: url("/src/img/eggnogg.jpg");
+        }
+        &--zinger{
+            background-image: url("/src/img/zinger.jpg");
+        }
+    }
+}
+
+@media only screen and (max-device-width: 768px){
+    .c-dashboard__imagesRow{
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .c-dashboard__image{
+        width:250px;
+        height: 250px;
+        margin-top:2rem;
+    }
+}

@@ -1,4 +1,2 @@
 import fun from "./script"
-
-
-fun();
+import "./../styles/style.scss"
